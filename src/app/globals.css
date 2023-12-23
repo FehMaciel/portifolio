@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.logo {
+  width: 250px;
+}
+
+@media screen and (max-width: 460px) {
+  .logo {
+    width: 150px;
+  }
+
+}
+
+.card-project {
+  transition: all 0.5s linear;
+
+}
+
+.group-links {
+  opacity: 0;
+  background-color: #03afe878;
+  border-radius: 0 0 0px 0px;
+  transition: opacity 0.5s linear;
+}
+
+.card-project:hover .group-links {
+  opacity: 1;
+}
+
+.card-project:hover {
+  transform: scale(1.01);
+  animation: pulse 4s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px 0px #03afe878;
+  }
+
+  50% {
+    box-shadow: 0 0 60px 0px #03afe878;
+  }
+
+  100% {
+    box-shadow: 0 0 20px 0px #03afe878;
+  }
+}
