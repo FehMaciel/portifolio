@@ -1,4 +1,5 @@
 import {Inter} from "next/font/google"
+import {Analytics} from "@vercel/analytics/react"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import "./globals.css"
 import "./style.scss"
@@ -14,6 +15,7 @@ export default function RootLayout({children}) {
 	return (
 		<html lang='pt-br'>
 			<body className={inter.className}>{children}</body>
+			<Analytics />
 		</html>
 	)
 }
