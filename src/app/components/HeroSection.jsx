@@ -9,7 +9,7 @@ const HeroSection = () => {
 	}
 
 	const handleClickCv = () => {
-		window.open("https://www.linkedin.com/in/felippemaciel", "_blank")
+		window.open("https://linkedin.com/in/felippemaciel", "_blank")
 	}
 	return (
 		<section>
