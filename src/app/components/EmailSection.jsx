@@ -120,7 +120,7 @@ const EmailSection = () => {
 					sociais”.
 				</p>
 				<div className='socials flex flex-row gap-2'>
-					<Link href='https://github.com/fehMaciel'>
+					<Link href='https://github.com/fehMaciel' target='_blank'>
 						<Image
 							src={GithubIcon}
 							alt='github'
@@ -129,7 +129,10 @@ const EmailSection = () => {
 							className='cursor-pointer '
 						></Image>
 					</Link>
-					<Link href='https://www.linkedin.com/in/felippe-maciel'>
+					<Link
+						href='https://www.linkedin.com/in/felippe-maciel'
+						target='_blank'
+					>
 						<Image
 							src={LinkedinIcon}
 							alt='linkedin'

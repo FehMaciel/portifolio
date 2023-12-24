@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 import {TypeAnimation} from "react-type-animation"
 
 const HeroSection = () => {
@@ -8,64 +9,9 @@ const HeroSection = () => {
 		window.open("https://ig.me/m/felippedeveloper", "_blank")
 	}
 
-	const handleClickCv = () => {
-		window.open("https://linkedin.com/in/felippemaciel", "_blank")
-	}
 	return (
 		<section>
 			<div className='grid grid-cols-1 sm:grid-cols-12 min-h-[calc(100vh-150px)] p-10'>
-				{/* <div class='stars'>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-					<div class='star'></div>
-				</div> */}
 				<div className='col-span-7 flex flex-col justify-center text-center sm:text-left'>
 					<h1 className='text-white mb-4 text-4xl sm:text-3xl lg:text-5xl font-extrabold'>
 						<span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>
@@ -110,14 +56,16 @@ const HeroSection = () => {
 						>
 							Entre em Contato
 						</button>
-						<button
-							onClick={handleClickCv}
-							className='px-0.5 py-0.5 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary to-secondary mr-4 bg-transparent hover:bg-transparent text-white  mt-3'
+						<Link
+							href='https://www.linkedin.com/in/felippe-maciel'
+							target='_blank'
 						>
-							<span className='block bg-[#121212] hover:bg-primary rounded-full px-5 py-2'>
-								Open CV
-							</span>
-						</button>
+							<button className='px-0.5 py-0.5 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary to-secondary mr-4 bg-transparent hover:bg-transparent text-white  mt-3'>
+								<span className='block bg-[#121212] hover:bg-primary rounded-full px-5 py-2'>
+									Open CV
+								</span>
+							</button>
+						</Link>
 					</div>
 				</div>
 
